@@ -19,16 +19,16 @@ namespace Test
 {
     public partial class MainForm : Form
     {
-        //TelegramClient client;
+        TelegramClient client;
 
-        ////Telegram
-        //int ipID = 118723;
-        //string ipHash = "1";
-        //string botToken = "1";
-        //string chanel = "1";
+        //Telegram
+        int ipID = 118723;
+        string ipHash = "1";
+        string botToken = "1";
+        string chanel = "1";
 
-        ////Facebook
-        //string AccessToken = "1";
+        //Facebook
+        string AccessToken = "1";
 
         //путь к файлу с котировками
         string QuikName = @"C:\";
