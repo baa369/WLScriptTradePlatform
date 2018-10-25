@@ -41,9 +41,9 @@ namespace Test
 
         //статус, состояние программы, имя стратегии
         int ProgrammStatus;
-        string StrName = "VP_ZRLS_CND_MBS";
+        string StrName = "";
 
-        //еквити сделок, котировки, алерты, позиции, суммарную позицию
+        //еквити сделок, котировки, алерты, позиции, суммарная позицию
         DataSeries equity;
         IList<Bars> ibars = new List<Bars>();
         public List<Dictionary<string, object>> salerts = new List<Dictionary<string, object>>();
@@ -1080,6 +1080,8 @@ namespace Test
             //var bot = new TelegramBotClient(botToken);
             //var s = bot.SendTextMessageAsync(chanel, positions);
 
+            _Logger.Debug(positions);
+
             //выводим лог сo временем
             AppText("positions sent");
         }
@@ -1091,6 +1093,8 @@ namespace Test
 
             //var bot = new TelegramBotClient(botToken);
             //var s = bot.SendTextMessageAsync(chanel, positions);
+
+            _Logger.Debug(positions);
 
             //выводим лог сo временем
             AppText("profile sent");

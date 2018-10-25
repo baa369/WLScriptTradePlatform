@@ -18,7 +18,7 @@ namespace WindowsFormsApplication
             }
         }
 
-        public string Name = "VP_ZRLS_CND_MBS";
+        public string Name = "NEVLEZAI";
         public string ScriptName
         {
             get
